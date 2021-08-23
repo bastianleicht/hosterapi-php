@@ -1,9 +1,9 @@
 {
     "name": "bastianleicht/hosterapi-php",
-    "description": "A full-featured implementation of Venocix HosterAPI",
+    "description": "A full-featured implementation of the HosterAPI",
     "license": "BSD-2-Clause",
     "type": "library",
-    "keywords": ["Reselling", "Hosting", "HosterAPI", "PHP", "API", "Venocix"],
+    "keywords": ["Reselling", "Hosting", "HosterAPI", "PHP", "API", "Dedicated"],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "authors": [
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Venocix\\HosterAPI\\": "src/"
+            "HosterAPI\\": "src/"
         }
     }
 }

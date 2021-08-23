@@ -5,7 +5,7 @@
  * PDX-License-Identifier: BSD-2-Clause
  */
 
-namespace Venocix\HosterAPI\Exception;
+namespace HosterAPI\Exception;
 
 class ParameterException extends \InvalidArgumentException
 {

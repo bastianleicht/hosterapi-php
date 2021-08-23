@@ -1,6 +1,6 @@
 HosterAPI PHP API Client
 =======================
-This **PHP 7.2+** library allows you to communicate with Venocix HosterAPI.
+This **PHP 7.2+** library allows you to communicate with the HosterAPI.
 
 [![Latest Stable Version](http://poser.pugx.org/bastianleicht/hosterapi-php/v)](https://packagist.org/packages/bastianleicht/hosterapi-php)
 [![Total Downloads](http://poser.pugx.org/bastianleicht/hosterapi-php/downloads)](https://packagist.org/packages/bastianleicht/hosterapi-php)
@@ -41,7 +41,7 @@ Creating the HosterAPI main object:
 require_once 'vendor/autoload.php';
 
 // Use the library namespace
-use Venocix\HosterAPI\HosterAPI;
+use HosterAPI\HosterAPI;
 
 // Then simply pass your API-Token when creating the API client object.
 $client = new HosterAPI('API-Token');

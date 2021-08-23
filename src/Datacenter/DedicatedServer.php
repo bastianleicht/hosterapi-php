@@ -1,9 +1,9 @@
 <?php
 
-namespace Venocix\HosterAPI\Datacenter;
+namespace HosterAPI\Datacenter;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Venocix\HosterAPI\HosterAPI;
+use HosterAPI\HosterAPI;
 
 class DedicatedServer
 {

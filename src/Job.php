@@ -1,6 +1,6 @@
 <?php
 
-namespace Venocix\HosterAPI;
+namespace HosterAPI;
 
 use GuzzleHttp\Exception\GuzzleException;
 

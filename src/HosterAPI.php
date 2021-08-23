@@ -5,14 +5,14 @@
  * PDX-License-Identifier: BSD-2-Clause
  */
 
-namespace Venocix\HosterAPI;
+namespace HosterAPI;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
-use Venocix\HosterAPI\Datacenter\DedicatedServer;
-use Venocix\HosterAPI\Datacenter\VirtualServer;
-use Venocix\HosterAPI\Exception\ParameterException;
+use HosterAPI\Datacenter\DedicatedServer;
+use HosterAPI\Datacenter\VirtualServer;
+use HosterAPI\Exception\ParameterException;
 
 class HosterAPI
 {

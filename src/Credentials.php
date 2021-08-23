@@ -5,9 +5,9 @@
  * PDX-License-Identifier: BSD-2-Clause
  */
 
-namespace Venocix\HosterAPI;
+namespace HosterAPI;
 
-use Venocix\HosterAPI\Exception\ParameterException;
+use HosterAPI\Exception\ParameterException;
 
 class Credentials
 {
