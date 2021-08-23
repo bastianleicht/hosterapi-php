@@ -217,6 +217,7 @@ class HosterAPI
     /* ======================================================================================================================================== */
 
     private $jobHandler;
+    private $softwareHandler;
     private $dedicatedHandler;
     private $virtualServerHandler;
 
@@ -227,6 +228,15 @@ class HosterAPI
     {
         if(!$this->jobHandler) $this->jobHandler = new Job($this);
         return $this->jobHandler;
+    }
+
+    /**
+     * @return Software
+     */
+    public function software(): Software
+    {
+        if(!$this->softwareHandler) $this->softwareHandler = new Software($this);
+        return $this->softwareHandler;
     }
 
     /**
