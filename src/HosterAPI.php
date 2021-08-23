@@ -214,6 +214,15 @@ class HosterAPI
 
     /* ======================================================================================================================================== */
 
+    private $jobHandler;
 
+    /**
+     * @return Job
+     */
+    public function job(): Job
+    {
+        if(!$this->jobHandler) $this->jobHandler = new Job($this);
+        return $this->jobHandler;
+    }
 
 }
