@@ -10,6 +10,8 @@ namespace Venocix\HosterAPI;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
+use Venocix\HosterAPI\Datacenter\DedicatedServer;
+use Venocix\HosterAPI\Datacenter\VirtualServer;
 use Venocix\HosterAPI\Exception\ParameterException;
 
 class HosterAPI
@@ -215,6 +217,8 @@ class HosterAPI
     /* ======================================================================================================================================== */
 
     private $jobHandler;
+    private $dedicatedHandler;
+    private $virtualServerHandler;
 
     /**
      * @return Job
@@ -223,6 +227,24 @@ class HosterAPI
     {
         if(!$this->jobHandler) $this->jobHandler = new Job($this);
         return $this->jobHandler;
+    }
+
+    /**
+     * @return DedicatedServer
+     */
+    public function dedicated(): DedicatedServer
+    {
+        if(!$this->dedicatedHandler) $this->dedicatedHandler = new DedicatedServer($this);
+        return $this->dedicatedHandler;
+    }
+
+    /**
+     * @return VirtualServer
+     */
+    public function virtualServer(): VirtualServer
+    {
+        if(!$this->virtualServerHandler) $this->virtualServerHandler = new VirtualServer($this);
+        return $this->virtualServerHandler;
     }
 
 }
